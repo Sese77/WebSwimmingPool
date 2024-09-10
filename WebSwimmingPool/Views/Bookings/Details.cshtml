@@ -1,0 +1,58 @@
+﻿@model WebSwimmingPool.Models.Bookings
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bookings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pools.Pool_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pools.Pool_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeClass.Day_Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeClass.Day_Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cust_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cust_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.No_Visitors)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.No_Visitors)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Booking_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
